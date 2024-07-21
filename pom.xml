@@ -22,12 +22,12 @@
 
     <properties>
         <!-- build properties-->
-        <java.source>17</java.source>
-        <java.target>17</java.target>
+        <java.source>21</java.source>
+        <java.target>21</java.target>
         <maven.compile.plugin>3.10.0</maven.compile.plugin>
 
         <!-- libraries -->
-        <lombok.version>1.18.22</lombok.version>
+        <lombok.version>1.18.32</lombok.version>
 
         <!-- tests -->
         <junit.version>5.8.2</junit.version>
@@ -74,6 +74,16 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.23.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.23.1</version>
         </dependency>
 
         <!-- tests -->
